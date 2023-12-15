@@ -1,4 +1,5 @@
 # mtm6407-Headless-CMS-zour0005
+
 # My Strapi CMS Site
 
 This is a web development project using Strapi as the Headless CMS and Vue for the frontend.
@@ -24,6 +25,6 @@ This is a web development project using Strapi as the Headless CMS and Vue for t
 
 ## Deployment
 
-- The site is deployed to GitHub Pages/Netlify.
+- The site is deployed to GitHub Pages.
 
 
