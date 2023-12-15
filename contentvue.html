@@ -1,0 +1,36 @@
+<template>
+    <div>
+      <h2>Content from Strapi:</h2>
+      <ul>
+        <li v-for="item in cmsData" :key="item.id">{{ item.title }}</li>
+      </ul>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'Content',
+    data() {
+      return {
+        cmsData: [],
+      };
+    },
+    mounted() {
+      this.fetchData();
+    },
+    methods: {
+      async fetchData() {
+        try {
+          // Replace 'https://your-strapi-api-endpoint/posts' with your actual Strapi API endpoint
+          const response = await fetch('https://your-strapi-api.com/your-content-type');
+          const data = await response.json();
+          this.cmsData = data;
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      },
+    },
+  };
+  </script>
+  
+  

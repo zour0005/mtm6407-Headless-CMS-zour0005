@@ -1,0 +1,11 @@
+/my-headless-cms-site
+|-- /src
+|   |-- /components
+|   |   |-- Content.vue
+|   |-- /views
+|   |   |-- Home.vue
+|   |-- App.vue
+|   |-- main.js
+|-- /public
+|-- package.json
+|-- README.md
